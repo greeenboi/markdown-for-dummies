@@ -23,9 +23,9 @@ Overall, a well-written README is an essential component of any software project
 ***
 
 # Table of contents
-1. [Horizontal line](#Horizontal-line)
-2. [Title/Headings](#title-headings)
-3. [Text](#Text)
+1. [Horizontal line](#horizontal-line)
+2. [Title/Headings](#titleheadings)
+3. [Text](#text)
    * 3.1. plain text
    * 3.2. One line Code block
    * 3.3. Multiline Code block
@@ -33,7 +33,8 @@ Overall, a well-written README is an essential component of any software project
    * 3.5. Line wrapping
    * 3.6. Italics
    * 3.7. Bold
-   * 3.8. Strikethrough
+   * 3.8. Bold and italic
+   * 3.9. Strikethrough
 4. [Insert tables](#Insert-tables)
 5. [Lists](#Lists)
     * 5.1. Marked
@@ -111,21 +112,28 @@ and then end with three `
 Often we feel the need to place code fragments, it is desirable not only to keep indents, but also highlight with color, for this you need to specify the programming language after the first three quotes
 
 ```python
-from django.contrib import admin
-# admin settings
-# Register your models here.
+#Simple binary search algorithm i made a while ago
+import random 
+import statistics
+import time
+start = 1
+end = 50
 
-from .models import Phonenumber, Division, MilitaryUnit
-
-
-class PhonenumberAdmin(admin.ModelAdmin): # describe the Directory section of the admin panel
-    # specify the displayed fields
-    list_display = (
-        'id',
-        'military_unit', # specify the military unit from the MilitaryUnit table
-        'division', # specify the division from the Division table
-        'subdivision',
-    )
+number=random.randint(start, end)
+print("The correct number is ",number)
+guess=0
+time.sleep(2)
+while(guess!=number):
+    mean=list(int(i) for i in range(int(start),int(end+1)))
+    guess=int(statistics.mean(mean))
+    
+    print(guess)
+    if guess<number:
+        start=guess+1
+    elif guess>number:
+        end=guess-1
+     
+print("Found and verified the number {0} with the guess {1}".format(number,guess))
 ```
 
 - Line Wrapping 
@@ -135,7 +143,27 @@ Perhaps this is not usual and not familiar, but when you press the "Enter" butto
 
 Or just add an empty string, i.e. press "Enter" 2 times. In this case, the transfer effect will be achieved, but line spacing will be larger.
 
+- Italics
 
+place text in between * or _ *like this* <br>
+`*hello* or  _world_`
+
+- Bold
+
+Place text in between double * or _ __like this__
+`__hello__ or **world**`
+
+- Bold and Italics
+
+place text in between triple * or _ ___like this___
+
+`___hello__ or ***world***`
+
+- Strikethrough
+place text in between double '~' to ~~strikethrough~~
+like this `~~sample text~~`
 
 [Back to Table of Contents](#table-of-contents)
+
+#  Insert tables
 
