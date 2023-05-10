@@ -165,5 +165,24 @@ like this `~~sample text~~`
 
 [Back to Table of Contents](#table-of-contents)
 
-#  Insert tables
+***
+## Insert tables
 
+We can create a simple table like this
+```
+|S.no|Name|Description|
+|----|----|------|
+|1| Greeenboi| coolguy|
+|2| you| Very cool person|
+```
+|S.no|Name|Description|
+|----|----|------|
+|1| Greeenboi| coolguy|
+|2| you| Very cool person|
+
+[Back to Table of Contents](#table-of-contents)
+***
+
+## Lists
+
+There are two tyes of lists; Ordered and unordered
