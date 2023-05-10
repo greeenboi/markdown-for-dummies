@@ -24,12 +24,12 @@ Overall, a well-written README is an essential component of any software project
 
 # Table of contents
 1. [Horizontal line](#Horizontal-line)
-2. [Title](#Title)
+2. [Title/Headings](#title-headings)
 3. [Text](#Text)
    * 3.1. plain text
-   * 3.2. One line of text
-   * 3.3. Multiline text
-   * 3.4. Text selection
+   * 3.2. One line Code block
+   * 3.3. Multiline Code block
+   * 3.4. Text Highlighting
    * 3.5. Line wrapping
    * 3.6. Italics
    * 3.7. Bold
@@ -45,3 +45,97 @@ Overall, a well-written README is an essential component of any software project
 8. [Useful links](#Useful-links)
     * 8.1. Shields
     * 8.2. Emoji
+
+## Horizontal line
+
+A horizontal line (separating line) can be obtained in three ways:
+
+- *** using three consecutive asterisks
+- --- using three consecutive hyphens
+- ___ using three consecutive underscores
+
+they all display the same horizontal line  effect
+***
+
+[Back to Table of Contents](#table-of-contents)
+
+## Title/Headings
+
+```
+there are 6 levels of title
+# First level title
+## second level title
+### third level title
+#### fourth level title
+##### fifth level title
+###### sixth level title
+```
+# 1st level title
+## 2nd level title
+### 3rd level title
+#### 4th level title
+##### 5th level title 
+###### 6th level title
+
+***
+Another method of making headings is by adding either a = or - to make a first or second level heading
+
+heading 1
+=
+
+heading 2
+-
+
+[Back to Table of Contents](#table-of-contents)
+
+***
+# Text
+
+- PLain text<br><br>
+It looks like this, usual text is displayed.
+
+- One Line code block<br>
+`it looks like this `
+Wrap the text with a pair of ` like this:
+```
+`hello world`
+``` 
+
+
+- Multi line code block<br>
+```
+Start with three `
+and then end with three `
+```
+- Text Highlighting<br><br>
+Often we feel the need to place code fragments, it is desirable not only to keep indents, but also highlight with color, for this you need to specify the programming language after the first three quotes
+
+```python
+from django.contrib import admin
+# admin settings
+# Register your models here.
+
+from .models import Phonenumber, Division, MilitaryUnit
+
+
+class PhonenumberAdmin(admin.ModelAdmin): # describe the Directory section of the admin panel
+    # specify the displayed fields
+    list_display = (
+        'id',
+        'military_unit', # specify the military unit from the MilitaryUnit table
+        'division', # specify the division from the Division table
+        'subdivision',
+    )
+```
+
+- Line Wrapping 
+
+
+Perhaps this is not usual and not familiar, but when you press the "Enter" button, your text will still be displayed in one line, and in order for your transfer to work, you need to add two spaces at the end of the line
+
+Or just add an empty string, i.e. press "Enter" 2 times. In this case, the transfer effect will be achieved, but line spacing will be larger.
+
+
+
+[Back to Table of Contents](#table-of-contents)
+
