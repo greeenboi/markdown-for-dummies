@@ -35,8 +35,8 @@ Overall, a well-written README is an essential component of any software project
    * 3.7. Bold
    * 3.8. Bold and italic
    * 3.9. Strikethrough
-4. [Insert tables](#Insert-tables)
-5. [Lists](#Lists)
+4. [Insert tables](#insert-tables)
+5. [Lists](#lists)
     * 5.1. Marked
     * 5.2. Numbered
 6. [Hidden menu](#Hidden-menu)
@@ -186,3 +186,60 @@ We can create a simple table like this
 ## Lists
 
 There are two tyes of lists; Ordered and unordered
+
+1. Ordered lists
+
+The numbered/ordered list is created like regular line numbering
+
+    1. first 1.1. first subparagraph 1.2. second paragraph
+    2. second
+    3. third 
+    4. fourth
+
+2. Unordered lists
+
+The unordered list is created using a * or a - or a + 
+```
+- hello
+* world
++ :)
+```
+[Back to Table of Contents](#table-of-contents)
+
+***
+## Hidden Menus
+Hidden menus are also called collaspable text <br>
+we can create two types of hidden menus.
+- closed
+- open
+<details>
+<summary>Closed menu</summary>
+It can be done with the following tags:
+
+```
+<details>
+<summary>text to show</summary>
+text in between
+</details>
+```
+</details>
+
+
+<details id=1 open>
+<summary>Opened menu</summary>
+It can be done with the following tags:
+
+```
+<details open>
+<summary>text to show</summary>
+text in between
+</details>
+```
+</details>
+
+
+[Back to Table of Contents](#table-of-contents)
+
+***
+
+
